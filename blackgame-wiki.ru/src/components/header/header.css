@@ -1,0 +1,94 @@
+.header {
+    color: white;
+    background-color: #060709;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.45);
+    position: fixed; /* Фиксированная позиция */
+    width: 100%; /* Ширина хедера на всю страницу */
+    top: 0; /* Разместить хедер вверху страницы */
+    z-index: 1000; /* Установка z-index для правильного отображения */
+}
+
+.header__logo {
+    size: 40px;
+}
+
+.container {
+    
+    width: auto;
+    height: 85px;
+    
+}
+
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 15px;
+    height: 85px;
+}
+
+.header__logo {
+    font-size: 40px;
+    width: 300px;
+    cursor: default;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.header__logo:hover {
+    font-size: 42px; /* Увеличение размера шрифта на 2 пикселя при наведении */
+    color: #4682B4; /* Голубой цвет текста */
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+    font-size: 24px;
+    /* transition: font-size 0.3s, color 0.3s; */
+}
+
+.header__nav > *:hover {
+    /* font-size: 26px; */
+    color: #4682B4;
+}
+
+.header__nav > * {
+    margin-right: 25px;
+}
+
+.header__nav > *:last-child {
+    margin-right: 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+}
+
+.search__icon{
+    background-color: #D9D9D9;
+    height: 30px;
+    width: 30px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin-right: 3px;
+}
+
+.header__search {
+    background-color: #D9D9D9;
+    height: 30px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.header__search{
+    color: #060709;
+    padding-left: 15px;
+}
+

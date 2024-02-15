@@ -1,0 +1,45 @@
+.image__container {
+    position: relative;
+    background-color: #212C31;
+    background-image: url('./MainGameImages/Revenawn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.imagelist__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    background-color: rgba(0, 0, 0, 0.8); /* Черный цвет с прозрачностью 0.5 */
+    display: flex;
+}
+
+.imagelist__overlay__text{
+    color: white;
+    font-size: 24px;
+    cursor: default;
+    margin-top: 10px;
+    position: fixed; /* Зафиксируем позицию элемента */ /* Разместим элемент на вертикальной оси по центру */
+    left: 50%; /* Разместим элемент на горизонтальной оси по центру */
+    transform: translate(-50%); /* Сдвинем элемент на половину его ширины и высоты назад, чтобы он оказался по центру */
+
+}
+
+.imagelist__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.imagelist_rightarrow,
+.imagelist_leftarrow {
+    max-width: 100%; /* Устанавливаем ширину в процентах */
+    height: auto; /* Автоматический расчет высоты */
+}
