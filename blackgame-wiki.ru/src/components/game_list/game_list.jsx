@@ -1,6 +1,7 @@
 import './game_list.css'
 
 function GameList (){
+
     return (
         <div className="image__container">
             <div className="imagelist__overlay">
