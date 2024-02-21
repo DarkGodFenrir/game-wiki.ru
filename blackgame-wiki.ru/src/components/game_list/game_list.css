@@ -1,4 +1,4 @@
-.image__container {
+/* .image__container {
     position: relative;
     background-color: #212C31;
     background-image: url('http://94.103.85.179:5000/images/revendawn.png');
@@ -6,15 +6,17 @@
     background-size: cover;
     background-position: center;
     height: 60vh;
-}
+} */
 
 .imagelist__overlay {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 45%;
-    background-color: rgba(0, 0, 0, 0.8); /* Черный цвет с прозрачностью 0.5 */
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.9); /* Черный цвет с прозрачностью 0.5 */
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .imagelist__overlay__text{
@@ -23,9 +25,6 @@
     cursor: default;
     margin-top: 10px;
     padding-bottom: 10px;
-    position: fixed; /* Зафиксируем позицию элемента */ /* Разместим элемент на вертикальной оси по центру */
-    left: 50%; /* Разместим элемент на горизонтальной оси по центру */
-    transform: translate(-50%); /* Сдвинем элемент на половину его ширины и высоты назад, чтобы он оказался по центру */
 
 }
 
@@ -57,7 +56,23 @@
     color: white;
     font-size: 20px;
     width: 100%;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+}
+
+.imagelist__games{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    /* margin-top: 15px; */
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.imagelist__games > *:hover{
+    color: #4682B4;
 }
 
 .imagelist__games > * {
@@ -70,15 +85,16 @@
 
 .imagelist_games_container{
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
 }
 
+.imagelist__gameName{
+    cursor: default;
+    margin-top:5px;
+}
 
-
-
-.imagelist_rightarrow,
-.imagelist_leftarrow {
-    max-width: 100%; /* Устанавливаем ширину в процентах */
-    height: auto; /* Автоматический расчет высоты */
+.news_list_container {
+    background-color: #303036; /* Цвет заднего фона */
 }

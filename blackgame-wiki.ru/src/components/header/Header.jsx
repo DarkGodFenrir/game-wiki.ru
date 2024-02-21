@@ -6,6 +6,7 @@ function Header () {
             <div className='container'>
                 <div className="header__row">
                     <div className='header__logo'>BlackGame-wiki</div>
+                    <div className="header_logo_mini">BGW</div>
                     <div className="header__nav">
                         <div className="tab__forum">Форум</div>
                         <div className="tab__search">Продвинутый поиск</div>

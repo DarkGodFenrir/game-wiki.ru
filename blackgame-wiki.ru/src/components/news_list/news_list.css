@@ -1,0 +1,119 @@
+.black_line {
+    height: 10px;
+    width: 100%; /* Занимает всю ширину экрана */
+    background-color: #000; /* Черный цвет */
+}
+
+.news_list_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%; /* Ширина контейнера - 70% от ширины экрана */
+    margin: 0 auto; /* Устанавливаем автоматичесные отступы слева и справа для центрирования */
+    background-color: #181818; /* Цвет заднего фона */
+    height: auto;
+    min-height: 400px;
+    box-shadow: 15px 0 15px 0 rgba(0, 0, 0, 0.8), -15px 0 15px 0 rgba(0, 0, 0, 0.8); /* Тень слева и справа по 15px */
+
+}
+
+.top_text{
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.news_canteiner {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap; /* перенос элементов на новую строку */
+    /* justify-content:center; */
+    justify-content:flex-start;
+    gap: 20px; /* промежуток между элементами */
+}
+
+.news_body {
+    width: 300px;
+    height: 150px;
+    max-height: 150px;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('http://94.103.85.179:5000/images/news/1/main.jpg');
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.news_body .news_text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Темный прозрачный фон */
+    width: 100%;
+    text-align: center;
+    bottom: 0; /* Размещаем текст названия внизу контейнера */
+    left: 0; /* Размещаем текст названия слева контейнера */
+    padding: 5px; /* Добавляем небольшие отступы вокруг текста */
+    transition: background-color 0.3s ease, height 0.3s; /* Добавляем плавный переход для свойства background-color */
+}
+
+.news_name{
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.news_body:hover .news_text {
+    background-color: rgba(0, 0, 0, 0.9); /* При наведении на элемент затемняем фон текста названия */
+    margin-bottom: 10px;
+}
+
+.news_description{
+    text-align: center;
+    max-height: 0;
+    font-size: 15px;
+    width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Добавляем плавный переход для свойств */
+}
+.news_body:hover .news_description{
+    max-height: 1000px; /* Максимальная высота, которая достаточна для отображения контента */
+    opacity: 1;
+    margin-top: 10px; /* Добавим небольшой отступ сверху для улучшения визуального эффекта */
+}
+
+.news_info{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.news_info >*{
+    margin-right: 25px;
+}
+
+.news_info >*:last-child{
+    margin-right: 0px;
+}
+
+.news_views, .news_likes, .news_comments{
+    display: flex;
+    flex-direction: row;
+}
+
+.views_icon, .likes_icon, .comments_icon{
+    margin-right: 5px;
+}

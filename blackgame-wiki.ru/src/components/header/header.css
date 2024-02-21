@@ -34,11 +34,18 @@
 .header__logo {
     font-size: 40px;
     width: 300px;
-    cursor: default;
+    cursor: pointer;
     transition: font-size 0.3s, color 0.3s;
 }
 
-.header__logo:hover {
+.header_logo_mini{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.header__logo:hover, .header_logo_mini:hover {
     font-size: 42px; /* Увеличение размера шрифта на 2 пикселя при наведении */
     color: #4682B4; /* Голубой цвет текста */
 }
@@ -46,7 +53,7 @@
 .header__nav {
     display: flex;
     flex-direction: row;
-    cursor: default;
+    cursor: pointer;
     font-size: 24px;
     /* transition: font-size 0.3s, color 0.3s; */
 }
@@ -92,3 +99,16 @@
     padding-left: 15px;
 }
 
+@media screen and (max-width: 800px) {
+    .header__logo {
+        display: none;
+    }
+
+    .header_logo_mini{
+        display: block;
+    }
+
+    .search{
+        display: none;
+    }
+}

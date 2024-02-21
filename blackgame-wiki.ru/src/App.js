@@ -8,8 +8,6 @@ function App() {
       <Header />
       <HeaderIndentation />
       <GameList />
-      <h1>Hello, react</h1>
-      
     </div>
   );
 }
